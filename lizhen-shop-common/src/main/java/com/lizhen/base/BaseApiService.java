@@ -2,11 +2,13 @@ package com.lizhen.base;
 
 import com.lizhen.constants.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * 封装Response使用方法
  * Created by lizhen on 2018/4/20 0020.
  */
+@Component
 public class BaseApiService {
 
     /**
