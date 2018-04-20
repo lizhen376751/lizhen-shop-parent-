@@ -13,6 +13,7 @@
         <module>lizhen-shop-eurekaserver</module>
         <module>lizhen-shop-api</module>
         <module>lizhen-shop-member</module>
+        <module>lizhen-shop-message</module>
     </modules>
 
     <parent>
