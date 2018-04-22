@@ -1,9 +1,12 @@
 package com.lizhen.base;
 
+import lombok.ToString;
+
 /**
  * 返回参数进行封装
  * Created by lizhen on 2018/4/20 0020.
  */
+@ToString
 public class ResponseBase {
     //返回状态码
     private Integer rtncode;
@@ -11,8 +14,12 @@ public class ResponseBase {
     private String rtnmsg;
     //响应数据
     private Object rtndata;
+    public ResponseBase() {
+
+    }
 
     public ResponseBase(Integer rtncode, String rtnmsg, Object rtndata) {
+        super();
         this.rtncode = rtncode;
         this.rtnmsg = rtnmsg;
         this.rtndata = rtndata;

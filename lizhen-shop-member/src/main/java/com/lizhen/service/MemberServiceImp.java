@@ -17,8 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.UUID;
+import java.util.Date;
 
 /**
  * 用户信息接口实现类
@@ -62,6 +61,8 @@ public class MemberServiceImp implements MemberService {
         }
         String md5 = MD5Util.MD5(password);
         user.setPassword(md5);
+        user.setCreated(new Date());
+        user.setUpdated(new Date());
         Integer integer = memberDao.insertUser(user);
 
         if (integer <= 0) {
