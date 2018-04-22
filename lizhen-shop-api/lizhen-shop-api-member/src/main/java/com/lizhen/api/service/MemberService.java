@@ -4,6 +4,7 @@ import com.lizhen.api.entity.UserEntity;
 import com.lizhen.base.ResponseBase;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 用户信息的接口
@@ -25,6 +26,6 @@ public interface MemberService {
 
     //根据token进行登录
     @RequestMapping("/loginByMemberToken")
-    ResponseBase loginByMemberToken(String memToken);
+    ResponseBase loginByMemberToken(@RequestParam("memToken")  String memToken);
 
 }

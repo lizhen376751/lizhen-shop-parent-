@@ -24,6 +24,7 @@ import java.util.LinkedHashMap;
 public class LoginController {
     @Autowired
     private MemServiceFegin memServiceFegin;
+    //替换成重定向，因为我们转发路径不会变，重定向路径会变，这样的话我重新刷新就可以了。
     private static final String INDEX = "redirect:/";
     public static final String LOGIN = "login";
 

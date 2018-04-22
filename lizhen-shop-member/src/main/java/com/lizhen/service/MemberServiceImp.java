@@ -16,6 +16,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
@@ -103,7 +104,7 @@ public class MemberServiceImp implements MemberService {
     }
 
     @Override
-    public ResponseBase loginByMemberToken(String memToken) {
+    public ResponseBase loginByMemberToken(@RequestParam("memToken") String memToken) {
         //判断token是否为空
         if (org.apache.commons.lang.StringUtils.isEmpty(memToken)) {
             return baseApiService.setErrorResponseBase("memberToken不能为空");
