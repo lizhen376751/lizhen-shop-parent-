@@ -15,6 +15,7 @@
         <module>lizhen-shop-member</module>
         <module>lizhen-shop-message</module>
         <module>lizhen-shop-pc-web</module>
+        <module>lizhen-shop-lcnmanager</module>
     </modules>
 
     <parent>

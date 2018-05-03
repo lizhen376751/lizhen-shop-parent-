@@ -29,3 +29,8 @@
 /out/
 /*.iml
 
+lizhen-shop-api/lizhen-shop-api-member/src/test/
+lizhen-shop-common/src/test/
+lizhen-shop-eurekaserver/src/test/
+lizhen-shop-member/src/test/
+lizhen-shop-message/src/test/
