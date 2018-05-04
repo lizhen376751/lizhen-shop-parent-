@@ -2,6 +2,7 @@ package com.lizhen.api.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Date;
 
@@ -11,6 +12,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
+@ToString
 public class UserEntity {
     private Integer id;
     private String username;

@@ -1,6 +1,5 @@
 package com.lizhen.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.lizhen.api.entity.UserEntity;
 import com.lizhen.base.ResponseBase;
 import com.lizhen.constants.Constants;

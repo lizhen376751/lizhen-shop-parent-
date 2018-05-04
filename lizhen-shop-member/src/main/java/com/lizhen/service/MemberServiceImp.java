@@ -54,11 +54,11 @@ public class MemberServiceImp implements MemberService {
     @Override
     public ResponseBase regUser(@RequestBody UserEntity user) {
         if (null == user) {
-            return baseApiService.setErrorResponseBase("用户信息不能为空.....");
+            return baseApiService.setErrorResponseBase("用户名不能为空.....");
         }
         String password = user.getPassword();
         if (StringUtils.isEmpty(password)) {
-            return baseApiService.setErrorResponseBase("用户信息不能为空.....");
+            return baseApiService.setErrorResponseBase("用户密码不能为空.....");
         }
         String md5 = MD5Util.MD5(password);
         user.setPassword(md5);

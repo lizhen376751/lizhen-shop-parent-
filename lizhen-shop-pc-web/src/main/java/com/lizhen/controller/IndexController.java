@@ -1,17 +1,13 @@
 package com.lizhen.controller;
-
-import com.alibaba.fastjson.JSONObject;
 import com.lizhen.base.ResponseBase;
 import com.lizhen.constants.Constants;
 import com.lizhen.fegin.MemServiceFegin;
 import com.lizhen.utils.CookieUtil;
-
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import javax.servlet.http.HttpServletRequest;
 import java.util.LinkedHashMap;
 
@@ -22,7 +18,7 @@ import java.util.LinkedHashMap;
 @Controller
 public class IndexController {
     @Autowired
-    private MemServiceFegin memServiceFegin;
+    MemServiceFegin memServiceFegin;
     public static final String INDEX = "index";
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
